@@ -11,7 +11,7 @@ const count = ref(0)
 <template>
     <div class="content">
         <h1>Hello!</h1>
-        <p>This is your Home page.</p>
+        <p>RUYI's kingdom.</p>
         <div>
             <n-button type="primary" @click="count++">Click here to give a like 👍 {{ count }}</n-button>
         </div>
