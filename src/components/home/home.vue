@@ -109,15 +109,15 @@ const count = ref(0)
         }
 
         .essays {
-            background-image: url(./personal-website/essays.jpg);
+            background-image: url(/personal-website/essays.jpg);
         }
 
         .music {
-            background-image: url(./personal-website/music.jpg);
+            background-image: url(/personal-website/music.jpg);
         }
 
         .community {
-            background-image: url(./personal-website/community.jpg);
+            background-image: url(/personal-website/community.jpg);
         }
     }
 }
