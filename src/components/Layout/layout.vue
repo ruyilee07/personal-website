@@ -9,7 +9,7 @@ import {
     <n-layout class="container">
         <n-layout-header>
         </n-layout-header>
-        <n-layout-content content-style="padding: 24px;">
+        <n-layout-content>
             <router-view />
         </n-layout-content>
     </n-layout>

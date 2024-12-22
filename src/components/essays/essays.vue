@@ -3,7 +3,7 @@
 
 <template>
     <div>
-        <p>This is your Blog page</p>
+        <p>This might be your Essays page.</p>
     </div>
 </template>
 

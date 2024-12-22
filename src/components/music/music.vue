@@ -3,7 +3,7 @@
 
 <template>
     <div>
-        <p>This might be your Project page.</p>
+        <p>This is your Music page</p>
     </div>
 </template>
 

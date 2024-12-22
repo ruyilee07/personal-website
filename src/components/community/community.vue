@@ -5,7 +5,7 @@
 <template>
     <!-- html -->
     <div>
-        <p>This is your About page.</p>
+        <p>This is your Community page.</p>
     </div>
 </template>
 

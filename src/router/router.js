@@ -3,9 +3,9 @@ import store from "../store/store";
 import Layout from "../components/Layout/layout.vue"
 import mLayout from "../components/Layout/mLayout.vue"
 import home from "../components/home/home.vue"
-import project from "../components/project/project.vue"
-import blog from "../components/blog/blog.vue"
-import about from "../components/about/about.vue"
+import essays from "../components/essays/essays.vue"
+import music from "../components/music/music.vue"
+import community from "../components/community/community.vue"
 
 const routes = [
     {
@@ -19,19 +19,19 @@ const routes = [
                 component: home
             },
             {
-                path: "project",
-                name: "project",
-                component: project
+                path: "essays",
+                name: "essays",
+                component: essays
             },
             {
-                path: "blog",
-                name: "blog",
-                component: blog
+                path: "music",
+                name: "music",
+                component: music
             },
             {
-                path: "about",
-                name: "about",
-                component: about
+                path: "community",
+                name: "community",
+                component: community
             }
         ]
     },
