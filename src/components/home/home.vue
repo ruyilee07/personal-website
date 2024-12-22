@@ -20,26 +20,32 @@ const count = ref(0)
         </n-flex>
         <div class="navbar">
             <n-grid :x-gap="24" style="height: 100%">
-                <n-gi class="navItem" @click="router.push({ name: 'essays' })" :span="8">
+                <n-gi class="navItem essays" @click="router.push({ name: 'essays' })" :span="8">
                     <n-flex :justify="'center'" :align="'center'" style="height: 100%">
                         <div>
-                            <div class="title">Essays</div>
+                            <n-flex :justify="'center'">
+                                <div class="title">Essays</div>
+                            </n-flex>
                             <div class="explanation">Essays are a mix of my overthinking and underthinking.</div>
                         </div>
                     </n-flex>
                 </n-gi>
-                <n-gi class="navItem" @click="router.push({ name: 'music' })" :span="8">
+                <n-gi class="navItem music" @click="router.push({ name: 'music' })" :span="8">
                     <n-flex :justify="'center'" :align="'center'" style="height: 100%">
                         <div>
-                            <div class="title">Music</div>
+                            <n-flex :justify="'center'">
+                                <div class="title">Music</div>
+                            </n-flex>
                             <div class="explanation">Music is cheaper than a shrink and way more therapeutic.</div>
                         </div>
                     </n-flex>
                 </n-gi>
-                <n-gi class="navItem" @click="router.push({ name: 'community' })" :span="8">
+                <n-gi class="navItem community" @click="router.push({ name: 'community' })" :span="8">
                     <n-flex :justify="'center'" :align="'center'" style="height: 100%">
                         <div>
-                            <div class="title">Commuity</div>
+                            <n-flex :justify="'center'">
+                                <div class="title">Commuity</div>
+                            </n-flex>
                             <div class="explanation">Community is where my leadership gets a workout.</div>
                         </div>
                     </n-flex>
@@ -65,7 +71,7 @@ const count = ref(0)
         }
 
         .slogan {
-            font-size: 22px;
+            font-size: 24px;
             border-radius: 50%;
         }
     }
@@ -78,6 +84,10 @@ const count = ref(0)
             background: #9e9e9e;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 24px;
 
             &:hover {
                 opacity: 0.6;
@@ -88,14 +98,26 @@ const count = ref(0)
                 font-weight: bold;
                 background: #FFFFFF;
                 margin-bottom: 24px;
-                padding: 4px;
+                padding: 4px 12px;
             }
 
             .explanation {
-                font-size: 18px;
-                background: #ffffff7d;
+                font-size: 24px;
+                background: #ffffffcb;
                 padding: 4px 12px;
             }
+        }
+
+        .essays {
+            background-image: url(./personal-website/essays.jpg);
+        }
+
+        .music {
+            background-image: url(./personal-website/music.jpg);
+        }
+
+        .community {
+            background-image: url(./personal-website/community.jpg);
         }
     }
 }
