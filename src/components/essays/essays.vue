@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { readJSON } from '../../api/handleJson';
+import router from '../../router/router';
 
 const parts = ref([
     {
@@ -36,7 +37,7 @@ function initial() {
 <template>
     <div class="container">
         <n-breadcrumb>
-            <n-breadcrumb-item @click="">
+            <n-breadcrumb-item @click="router.push({ name: 'home'})">
                 <div class="breadcrumbItem">Ruyi Li</div>
             </n-breadcrumb-item>
             <n-breadcrumb-item>
