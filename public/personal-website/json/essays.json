@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "type": 0,
+        "coverURL": "./personal-website/img/essays/Do-business-have-the-right-to-refuse-service-to-anyone.webp",
+        "progress": "2024 DISTINCTION AWARD",
+        "title": "Do business have the right to refuse service to anyone?",
+        "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        "date": "December 8, 2024",
+        "content": ""
+    },
+    {
+        "id": 2,
+        "type": 0,
+        "coverURL": "./personal-website/img/essays/Should-we-ban-billionaires.webp",
+        "progress": "2023 SUBMISSION",
+        "title": "Should we ban billionaires?",
+        "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident.",
+        "date": "December 8, 2024",
+        "content": ""
+    }
+]
