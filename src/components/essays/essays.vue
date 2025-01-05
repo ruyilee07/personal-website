@@ -2,25 +2,7 @@
 import { ref } from 'vue';
 import { readJSON } from '../../api/handleJson';
 import router from '../../router/router';
-
-const parts = ref([
-    {
-        name: "JOHN LOCKE INSTITUTE ESSAY COMPETITION",
-        type: 0,
-    },
-    {
-        name: "NEWSPAPER SUBMISSIONS",
-        type: 1,
-    },
-    {
-        name: "THOUGHTS",
-        type: 2,
-    },
-    {
-        name: "POETRY",
-        type: 3,
-    }
-])
+import { parts } from './essay.functions';
 
 initial();
 
@@ -32,12 +14,16 @@ function initial() {
         })
     })
 }
+
+function handleToEssayDetail(essay) {
+    router.push({ name: "essay", params: { essayId: essay.id } })
+}
 </script>
 
 <template>
     <div class="container">
         <n-breadcrumb>
-            <n-breadcrumb-item @click="router.push({ name: 'home'})">
+            <n-breadcrumb-item @click="router.push({ name: 'home' })">
                 <div class="breadcrumbItem">Ruyi Li</div>
             </n-breadcrumb-item>
             <n-breadcrumb-item>
@@ -49,7 +35,7 @@ function initial() {
             <n-flex vertical :size="24">
                 <div class="partName"><b>{{ part.name }}</b></div>
                 <n-grid :cols="4" :x-gap="24" :y-gap="24">
-                    <n-gi v-for="essay in part.essays">
+                    <n-gi v-for="essay in part.essays" class="essay" @click="handleToEssayDetail(essay)">
                         <n-flex vertical :size="8">
                             <div><img style="width: 100%" :src="essay.coverURL" /></div>
                             <div style="color: red">{{ essay.progress }}</div>
@@ -57,11 +43,11 @@ function initial() {
                                 <n-ellipsis :line-clamp="2"><b>{{ essay.title }}</b></n-ellipsis>
                             </div>
                             <div>
-                                <n-text :depth="3">
+                                <div class="intro">
                                     <n-ellipsis :tooltip="false" :line-clamp="3">
                                         {{ essay.intro }}
                                     </n-ellipsis>
-                                </n-text>
+                                </div>
                             </div>
                         </n-flex>
                     </n-gi>
@@ -83,6 +69,23 @@ function initial() {
     .partName {
         font-size: 20px;
         text-align: center;
+    }
+
+    .essay {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: var(--primary-color);
+
+            .intro {
+                color: var(--primary-color);
+            }
+        }
+
+        .intro {
+            color: #8f8f8f;
+        }
     }
 }
 </style>

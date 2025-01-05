@@ -4,6 +4,7 @@ import Layout from "../components/Layout/layout.vue"
 import mLayout from "../components/Layout/mLayout.vue"
 import home from "../components/home/home.vue"
 import essays from "../components/essays/essays.vue"
+import essayDetail from "../components/essays/essayDetail.vue";
 import music from "../components/music/music.vue"
 import community from "../components/community/community.vue"
 
@@ -22,6 +23,11 @@ const routes = [
                 path: "essays",
                 name: "essays",
                 component: essays
+            },
+            {
+                path: "essay/:essayId",
+                name: "essay",
+                component: essayDetail
             },
             {
                 path: "music",
