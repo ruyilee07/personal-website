@@ -34,7 +34,7 @@ async function initial() {
                         <n-breadcrumb-item @click="router.push({ name: 'home' })">
                             <div class="breadcrumbItem">Ruyi Li</div>
                         </n-breadcrumb-item>
-                        <n-breadcrumb-item>
+                        <n-breadcrumb-item @click="router.push({ name: 'essays' })">
                             <div class="breadcrumbItem">Essays</div>
                         </n-breadcrumb-item>
                         <n-breadcrumb-item>
