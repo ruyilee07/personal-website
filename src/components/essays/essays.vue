@@ -37,7 +37,7 @@ function handleToEssayDetail(essay) {
                 <n-grid :cols="4" :x-gap="24" :y-gap="24">
                     <n-gi v-for="essay in part.essays" class="essay" @click="handleToEssayDetail(essay)">
                         <n-flex vertical :size="8">
-                            <div><img style="width: 100%" :src="essay.coverURL" /></div>
+                            <div class="image"><img :src="essay.coverURL" /></div>
                             <div style="color: red">{{ essay.progress }}</div>
                             <div style="height: 50px; font-size: 22px; line-height: 1.1;">
                                 <n-ellipsis :line-clamp="2"><b>{{ essay.title }}</b></n-ellipsis>
@@ -85,6 +85,14 @@ function handleToEssayDetail(essay) {
 
         .intro {
             color: #8f8f8f;
+        }
+
+        .image {
+            img {
+                aspect-ratio: 4/3;
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
 }

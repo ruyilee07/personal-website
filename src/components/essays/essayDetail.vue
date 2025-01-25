@@ -57,8 +57,8 @@ async function initial() {
                                 </n-flex>
                             </n-flex>
                         </n-gi>
-                        <n-gi :span=12 style="text-align: center;">
-                            <img style="width: 70%" :src="currentEssay.coverURL" />
+                        <n-gi :span=12 style="text-align: center;" class="image">
+                            <img :src="currentEssay.coverURL" />
                         </n-gi>
                     </n-grid>
                 </div>
@@ -90,5 +90,13 @@ async function initial() {
 .intro,
 .date {
     color: #bfbfbf;
+}
+
+.image{
+    img {
+        aspect-ratio: 4/3;
+        width: 70%;
+        object-fit: cover;
+    }
 }
 </style>
