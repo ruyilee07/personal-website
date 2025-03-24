@@ -7,6 +7,7 @@ import essays from "../components/essays/essays.vue"
 import essayDetail from "../components/essays/essayDetail.vue";
 import music from "../components/music/music.vue"
 import community from "../components/community/community.vue"
+import about from "../components/about/about.vue"
 
 const routes = [
     {
@@ -38,6 +39,11 @@ const routes = [
                 path: "community",
                 name: "community",
                 component: community
+            },
+            {
+                path: "about",
+                name: "about",
+                component: about
             }
         ]
     },
