@@ -35,6 +35,9 @@ const themeOverrides = {
 @import "./style.css";
 
 #app {
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
   margin: 0 auto;
   padding: 0;
 }
