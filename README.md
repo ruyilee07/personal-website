@@ -35,14 +35,14 @@ The project integrates GitHub Actions for automatic deployment. Every time code 
 
 ## View the Website
 
-You can access the deployed website via the following link: [Click here](https://yehruei.github.io/personal-website)
+You can access the deployed website via the following link: [Click here](https://ruyilee07.github.io/personal-website)
 
 ## How to Run the Project
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/yehruei/personal-website.git
+git clone https://github.com/ruyilee07/personal-website.git
 ```
 
 Navigate to the project directory and install dependencies:
