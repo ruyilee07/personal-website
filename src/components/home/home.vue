@@ -9,7 +9,7 @@ import router from '../../router/router';
             <n-grid style="align-items: center;">
                 <n-gi :span="16">
                     <div class="name">RUYI LI</div>
-                    <n-image width="690" src="./personal-website/home/1.webp"></n-image>
+                    <n-image width="690" src="./personal-website/home/sample.jpg"></n-image>
                 </n-gi>
                 <n-gi :span="8" class="intro">
                     <p>Welcome to my personal website! My name is Ruyi Li, and I’m currently studying at Shanghai

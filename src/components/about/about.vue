@@ -14,7 +14,7 @@ import { ref } from 'vue'
                             <div>IS</div>
                             <div>RUYI LI</div>
                         </n-flex>
-                        <n-image src="./personal-website/about/sample2.webp" />
+                        <n-image src="./personal-website/about/Avatar.png" />
                     </n-gi>
                     <n-gi :span="12" class="about">
                         <p>"Embrace every challenge as a chance to lead and learn, turning obstacles into stepping
@@ -27,10 +27,7 @@ import { ref } from 'vue'
                         </n-flex>
                         <div style="margin-top: 320px">
                             <n-divider title-placement="right" dashed>
-                                Student union president
-                            </n-divider>
-                            <n-divider title-placement="right" dashed>
-                                Organizer
+                                TED x UCS Host
                             </n-divider>
                             <n-divider title-placement="right" dashed>
                                 IELTS - 8

@@ -25,8 +25,8 @@ function handleToEssayDetail(essay) {
         <div class="container__inner">
             <div v-for="(part, index) in parts">
                 <n-flex vertical :size="24">
-                    <div class="partName"><b>{{ part.name }}</b></div>
-                    <n-grid :cols="4" :x-gap="24" :y-gap="24">
+                    <n-divider dashed>{{ part.name }}</n-divider>
+                    <n-grid :cols="3" :x-gap="24" :y-gap="24">
                         <n-gi v-for="essay in part.essays" class="essay" @click="handleToEssayDetail(essay)">
                             <n-flex vertical :size="8">
                                 <div class="image"><img :src="essay.coverURL" /></div>
@@ -45,7 +45,6 @@ function handleToEssayDetail(essay) {
                         </n-gi>
                     </n-grid>
                 </n-flex>
-                <n-divider v-if="index != parts.length - 1" />
             </div>
         </div>
     </div>
@@ -53,15 +52,18 @@ function handleToEssayDetail(essay) {
 
 <style lang="less" scoped>
 .container {
-    .container__inner{
+    .container__inner {
         width: 1200px;
         margin: 0 auto;
-        padding: 24px 0;
-    }
+        padding: 24px 24px 128px 24px;
 
-    .partName {
-        font-size: 20px;
-        text-align: center;
+        .n-divider {
+            font-size: 20px;
+
+            :deep(.n-divider__line) {
+                border-color: #3e3e3e;
+            }
+        }
     }
 
     .essay {

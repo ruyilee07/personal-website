@@ -1,49 +1,41 @@
 import { createWebHashHistory, createRouter } from "vue-router";
 import store from "../store/store";
-import Layout from "../components/Layout/layout.vue"
-import mLayout from "../components/Layout/mLayout.vue"
-import home from "../components/home/home.vue"
-import essays from "../components/essays/essays.vue"
-import essayDetail from "../components/essays/essayDetail.vue";
-import music from "../components/music/music.vue"
-import community from "../components/community/community.vue"
-import about from "../components/about/about.vue"
 
 const routes = [
     {
         path: "/",
         name: "landing",
-        component: store.state.display.isMobile ? mLayout : Layout,
+        component: () => store.state.display.isMobile ? import("../components/Layout/mLayout.vue") : import("../components/Layout/layout.vue"),
         children: [
             {
                 path: "",
                 name: "home",
-                component: home
+                component: () => store.state.display.isMobile ? import("../components/home/mHome.vue") : import("../components/home/home.vue")
             },
             {
                 path: "essays",
                 name: "essays",
-                component: essays
+                component: () => store.state.display.isMobile ? import("../components/essays/mEssays.vue") : import("../components/essays/essays.vue")
             },
             {
                 path: "essay/:essayId",
                 name: "essay",
-                component: essayDetail
+                component: () => store.state.display.isMobile ? import("../components/essays/mEssayDetail.vue") : import("../components/essays/essayDetail.vue")
             },
             {
                 path: "music",
                 name: "music",
-                component: music
+                component: () => store.state.display.isMobile ? import("../components/music/mMusic.vue") : import("../components/music/music.vue")
             },
             {
                 path: "community",
                 name: "community",
-                component: community
+                component: () => store.state.display.isMobile ? import("../components/community/mCommunity.vue") : import("../components/community/community.vue")
             },
             {
                 path: "about",
                 name: "about",
-                component: about
+                component: () => store.state.display.isMobile ? import("../components/about/mAbout.vue") : import("../components/about/about.vue")
             }
         ]
     },

@@ -41,10 +41,10 @@ async function initial() {
                 <n-divider style="margin-top: 48px" dashed>Essay</n-divider>
                 <div style="margin-top: 48px;">
                     <n-grid style="align-items: center;" :x-gap="48">
-                        <n-gi :span=12 style="text-align: center;" class="image">
+                        <n-gi :span="12" style="text-align: center;" class="image">
                             <img :src="currentEssay.coverURL" />
                         </n-gi>
-                        <n-gi :span=12>
+                        <n-gi :span="12">
                             <n-flex vertical :size="24">
                                 <div class="progress"><b>{{ currentEssay.progress }}</b></div>
                                 <div class="title"><b>{{ currentEssay.title }}</b></div>

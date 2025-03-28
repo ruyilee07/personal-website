@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import router from '../../router/router';
 
 const menuItems = [
@@ -43,7 +42,7 @@ const menuItems = [
 
 <style lang='less' scoped>
 .container {
-    min-height: 100vh;
+    min-height: calc(100vh - 72px);
     background: var(--main-background);
 
     .n-layout-header {

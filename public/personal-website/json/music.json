@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Acoustic Guitar Cover: Valentine (Laufey)",
+        "coverUrl": "./personal-website/music/Music-1.webp",
+        "videoUrl": "videos/student/ruyi/Music01/Music01.m3u8",
+        "date": "February 14, 2024",
+        "width": 0
+    },
+    {
+        "id": 2,
+        "title": "Acoustic Guitar Cover: Male Fantasy (Billie Eilish)",
+        "coverUrl": "./personal-website/music/Music-2.webp",
+        "videoUrl": "videos/student/ruyi/Music02/Music02.m3u8",
+        "date": "November 19, 2024",
+        "width": 260
+    },
+    {
+        "id": 3,
+        "title": "Acoustic Guitar Cover: Birds of A Feather (Billie Eilish)",
+        "coverUrl": "./personal-website/music/Music-3.webp",
+        "videoUrl": "videos/student/ruyi/Music03/Music03.m3u8",
+        "date": "October 17, 2024",
+        "width": 260
+    }
+]
