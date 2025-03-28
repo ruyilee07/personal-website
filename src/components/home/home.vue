@@ -39,8 +39,11 @@ import router from '../../router/router';
 .container {
 
     .container__inner {
+        height: calc(100vh - 72px - 48px);
         width: 1200px;
         margin: 0 auto;
+        display: flex;
+        align-items: center;
 
         .name {
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
